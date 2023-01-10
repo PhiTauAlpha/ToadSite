@@ -6,16 +6,27 @@
         <link rel ="icon" type = "image/x-icon" href="https://alumni.gcc.edu/s/1472/images/editor/events/2016/homecoming_2106/greek/phi_tau_alpha.png">
     </head>
 
-
+`
     <style>
     img {
         width: 50%
     }
     body {
         background-color: rgb(147,172,192);
+        animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
     }
     /* Navbar container */
-  .navbar {
+    .navbar {
     display: flex;
     justify-content: center;
     font-family: Arial;
@@ -32,6 +43,14 @@
     background-color:rgb(147,172,192);
     width:100%
   }
+  .logo {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+  
+  
 
 
 
@@ -41,29 +60,30 @@
 }
 h3 {text-align: center;}
 
+.actives {
+background-color: silver;
+margin-left: 300px;
+margin-right: 0px;
+}
+
 </style>
     
-    <body>
+    <body >
       <div style="position: fixed; top: 0px; width:100%; height: 100px;">
         <div class="navbar">
             <a href="./index.html">Home</a>
-            <a href="./Rush.html">Rush</a>
             <a href="./Actives.html">Active Members</a>
             <a href="Socials.html">Contact us</a>
             <a href="./Donate.html">Donate</a>
+
             </div>
           </div>  
-        </div>
+        <br> <br>
+        <img class="logo" src="https://alumni.gcc.edu/s/1472/images/editor/events/2016/homecoming_2106/greek/phi_tau_alpha.png">
+      <h3 class="motto" style ="color:rgba(0, 0, 0, 0.685); font-size: 20px;;"> pursuing excellence in brotherhood </h3>
+          <br> <br> <br>
+          <div class="actives">
 
-        <div>
-          <p style="text-align:center;">
-        <img src = "https://alumni.gcc.edu/s/1472/images/editor/events/2016/homecoming_2106/greek/phi_tau_alpha.png" alt="Logo"/>
-          </p>
-        </div>
-
-    <div>
-      <h3 style ="color:rgba(0, 0, 0, 0.685)"> pursuing excellence in brotherhood </h3>
-    </div>
 
     </body>
 </html>
